@@ -1,0 +1,142 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #676a81;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+/* 
+    font-family: 'Poppins', sans-serif;
+*/
+/* .header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background: #fff;
+  padding: 0 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* .serch-box */
+.search-box {
+  display: none;
+}
+
+.search-box .form-group input[type=text] {
+  width: 100%;
+  padding: 25px;
+  background: #ddd;
+  border: 0;
+  color: #a01a1a;
+  font-size: 24px;
+}
+
+/* .logo */
+.logo {
+  text-transform: capitalize;
+  color: #a01a1a;
+}
+
+/* .header-menu */
+.responsive-menu {
+  display: none;
+  color: #a01a1a;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-menu ul li a, .head-social-link ul li a {
+  display: block;
+  padding: 0 15px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(77, 73, 73);
+  transition: 0.5s all;
+}
+
+.head-social-link ul li a {
+  font-size: 15px;
+  padding: 0 5px;
+  color: #676a81;
+}
+
+.header-menu ul li a:hover, .header-menu ul li a.menu-active {
+  color: #a01a1a;
+  text-decoration: underline;
+}
+
+.head-social-link ul li a:hover {
+  color: #0b021b;
+}
+
+/* responsive */
+@media screen and (max-width: 1199px) {
+  .header-menu {
+    position: relative;
+  }
+  .responsive-menu {
+    display: block;
+  }
+  .responsive-sub-menu {
+    display: block;
+  }
+  .responsive-sub-menu {
+    display: block;
+    position: absolute;
+    top: 65px;
+    background: #fff;
+    order: 1;
+    transform: translateX(-160px);
+    transition: 0.7s linear;
+  }
+  .responsive-active-sub-menu {
+    transform: translateX(0px);
+  }
+  .logo {
+    order: 2;
+  }
+  .responsive-sub-menu.responsive-active-sub-menu > li {
+    width: 100%;
+    padding: 5px 0;
+  }
+  .head-social-link {
+    order: 3;
+  }
+} /*max-width:1199px*/
+@media screen and (max-width: 991px) {
+  .header-menu {
+    position: relative;
+    display: block;
+  }
+  .responsive-sub-menu {
+    display: block;
+    position: absolute;
+  }
+} /*max-width:991px*/
+@media screen and (max-width: 767px) {
+  .header-menu {
+    position: relative;
+    display: block;
+  }
+  .responsive-sub-menu {
+    display: block;
+    position: absolute;
+    transform: translateX(-30px);
+  }
+} /*max-width:767px*//*# sourceMappingURL=menu_header.css.map */
