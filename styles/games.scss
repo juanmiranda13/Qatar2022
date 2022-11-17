@@ -23,7 +23,63 @@
 }
 
 
-  /* Footer */
+.fase-grups{
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: -25%;
+    img{
+        width: 8%;
+        margin: 10px;
+    }
+    p{
+        font-size: 30px;
+        font-weight: 200;
+        color: #ffffff;
+    }
+}
+
+.fase-grupsb{
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: -25%;
+    img{
+        width: 8%;
+        margin: 10px;
+    }
+    p{
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 200;
+    }
+}
+
+.fase-grupsc{
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    left: -25%;
+    img{
+        width: 8%;
+        margin: 10px;
+    }
+    p{
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: 200;
+    }
+}
+
+
+.icons-pais{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Footer */
 
 footer{
     background-color: #ffffff;
